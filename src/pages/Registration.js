@@ -27,7 +27,7 @@ const Register = () => {
 
         setLoading(true);
         try {
-            const response = await axios.post('http://localhost:8000/api/register/', formData);
+            const response = await axios.post('https://6db7-197-253-32-226.ngrok-free.app/api/register/', formData);
             localStorage.setItem('token', response.data.token); // Save the token
             navigate('/'); // Redirect to home page
         } catch (err) {

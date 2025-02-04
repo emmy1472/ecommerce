@@ -44,7 +44,7 @@ const Cart = () => {
                                     <td>
                                         <div className="d-flex align-items-center">
                                             <img 
-                                                src={`http://127.0.0.1:8000/api/products${item.image}`} 
+                                                src={`https://6db7-197-253-32-226.ngrok-free.app/api/products${item.image}`} 
                                                 alt={item.name} 
                                                 className="cart-item-image"
                                             />
