@@ -15,7 +15,7 @@ const ProductDetails = () => {
     useEffect(() => {
         const fetchProduct = async () => {
             try {
-                const response = await axios.get(`http://localhost:8000/api/products/products/${id}/`);
+                const response = await axios.get(`https://6db7-197-253-32-226.ngrok-free.app/api/products/products/${id}/`);
                 setProduct(response.data);
             } catch (error) {
                 console.error("Error fetching product details:", error);
