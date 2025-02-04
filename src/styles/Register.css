@@ -1,0 +1,30 @@
+/* Centering the register form */
+.register-container {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the input fields and button */
+.register-container .form-control {
+    border-radius: 10px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the submit button */
+.register-container .btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+}
+
+.register-container .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Add hover effect for the login link */
+.register-container .text-muted:hover {
+    text-decoration: underline;
+}

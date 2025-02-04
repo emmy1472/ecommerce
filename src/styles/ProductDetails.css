@@ -1,0 +1,14 @@
+/* Hover zoom effect for product image */
+.hover-zoom:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Shadow effect for the Add to Cart button */
+.shadow-md {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hover-shadow-lg:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}

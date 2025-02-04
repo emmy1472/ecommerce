@@ -1,0 +1,48 @@
+/* Footer Styles */
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer h5 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  .footer ul {
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .footer ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer ul li a {
+    transition: color 0.3s ease;
+  }
+  
+  .footer ul li a:hover {
+    color: #ffcc00;
+  }
+  
+  .footer i {
+    font-size: 1.25rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .footer i:hover {
+    transform: scale(1.2);
+    color: #ffcc00;
+  }
+  
+  hr.bg-white {
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+  
