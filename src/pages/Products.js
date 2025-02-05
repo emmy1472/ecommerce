@@ -22,7 +22,7 @@ const Products = () => {
           <div className="col-sm-6 col-md-4 col-lg-3 mb-4" key={product.id}>
             <div className="card product-card h-100 shadow-sm">
               <img
-                src={`https://a0ce-197-253-32-226.ngrok-free.app${product.image}`} 
+                src={product.image} 
                 className="card-img-top"
                 alt={product.name}
                 style={{ height: "200px", objectFit: "cover" }}
