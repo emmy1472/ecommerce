@@ -56,7 +56,7 @@ const ProductDetails = () => {
                 {/* Product Image */}
                 <div className="col-md-6 mb-4 mb-md-0">
                     <img 
-                        src={`https://a0ce-197-253-32-226.ngrok-free.app/api/products${product.image}`} 
+                        src={`https://355d-197-253-32-226.ngrok-free.app/api/products${product.image}`} 
                         alt={product.name} 
                         className="img-fluid rounded-lg shadow-lg hover-zoom"
                     />
