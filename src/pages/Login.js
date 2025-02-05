@@ -15,7 +15,7 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:8000/api/login/', formData);
+            const response = await axios.post('http://a0ce-197-253-32-226.ngrok-free.app/api/login/', formData);
             localStorage.setItem('token', response.data.token); // Save the token
             navigate('/'); // Redirect to home page
         } catch (err) {
