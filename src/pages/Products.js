@@ -17,8 +17,6 @@ const Products = () => {
         // Ensure we store an array in 'products'
         if (Array.isArray(data)) {
           setProducts(data);
-        } else if (data && Array.isArray(data.products)) {
-          setProducts(data.products);
         } else {
           setProducts([]); // If response is invalid, set an empty array
         }
@@ -52,7 +50,7 @@ const Products = () => {
               <div className="col-sm-6 col-md-4 col-lg-3 mb-4" key={product.id}>
                 <div className="card product-card h-100 shadow-sm">
                   <img
-                    src={product.image}
+                    src={`https://f1ec-197-253-32-226.ngrok-free.app${product.image}`} // Full image URL
                     className="card-img-top"
                     alt={product.name}
                     style={{ height: "200px", objectFit: "cover" }}
