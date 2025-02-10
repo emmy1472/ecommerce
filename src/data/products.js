@@ -6,7 +6,7 @@ const products = [
             "name": "Drugs",
             "slug": "drugs"
         },
-        "image": "ecommerce/images/images (5).jpeg",
+        "image": process.env.PUBLIC_URL +"ecommerce/images/images (5).jpeg",
         "name": "Procold",
         "description": "it is for cold and carttarh..... it helps in suppressing cold and make you sleep.",
         "price": "150.00",
@@ -20,7 +20,7 @@ const products = [
             "name": "Electronics",
             "slug": "electronics"
         },
-        "image": "ecommerce/images/laptop1.jpg",
+        "image": process.env.PUBLIC_URL +"ecommerce/images/laptop1.jpg",
         "name": "Hp ELITEBOOK",
         "description": "Hp ELITEBOOK X360 1030 G3 8TH GEN CORE I5 8GB RAM/ 512GB SSD BACKLIT KEYBOARD FP READER WIN 11 PRO",
         "price": "650000.00",
@@ -34,7 +34,7 @@ const products = [
             "name": "Fruits",
             "slug": "fruits"
         },
-        "image": "ecommerce/images/images (4).jpeg",
+        "image": process.env.PUBLIC_URL +"ecommerce/images/images (4).jpeg",
         "name": "Lemon",
         "description": "Big yellow lemon",
         "price": "500.00",
@@ -48,7 +48,7 @@ const products = [
             "name": "Electronics",
             "slug": "electronics"
         },
-        "image": "ecommerce/images/acBook-Pro.jpeg",
+        "image": process.env.PUBLIC_URL +"ecommerce/images/acBook-Pro.jpeg",
         "name": "MacBook Pro 14-inch (M2 Chip)",
         "description": "A powerful and sleek laptop with Apple's M2 chip, 16GB RAM, 512GB SSD, and a stunning Retina display.",
         "price": "1200000.00",
@@ -62,7 +62,7 @@ const products = [
             "name": "Accessories",
             "slug": "accessories"
         },
-        "image": "ecommerce/images/headphone WH.jpeg",
+        "image": process.env.PUBLIC_URL +"ecommerce/images/headphone WH.jpeg",
         "name": "Sony WH-1000XM5 Wireless Headphones",
         "description": "Premium noise-canceling headphones with exceptional sound quality and a comfortable design for long listening sessions.",
         "price": "180000.00",
@@ -76,7 +76,7 @@ const products = [
             "name": "Electronics",
             "slug": "electronics"
         },
-        "image": "ecommerce/images/Samsung Galaxy S23 Ultra.webp",
+        "image": process.env.PUBLIC_URL +"ecommerce/images/Samsung Galaxy S23 Ultra.webp",
         "name": "Samsung Galaxy S23 Ultra",
         "description": "A flagship smartphone with a 200MP camera, 5,000mAh battery, 12GB RAM, and a stunning 6.8-inch AMOLED display.",
         "price": "850000.00",
@@ -90,7 +90,7 @@ const products = [
             "name": "Furniture",
             "slug": "furniture"
         },
-        "image": "ecommerce/images/Herman-Miller-Aeron-2_clipped_rev_1-1.jpeg",
+        "image": process.env.PUBLIC_URL +"ecommerce/images/Herman-Miller-Aeron-2_clipped_rev_1-1.jpeg",
         "name": "Herman Miller Aeron Office Chair",
         "description": "Ergonomic office chair with adjustable lumbar support, premium build quality, and unmatched comfort.",
         "price": "750000.00",
@@ -104,7 +104,7 @@ const products = [
             "name": "Fashion",
             "slug": "fashion"
         },
-        "image": "ecommerce/images/Rolex Submariner.jpeg",
+        "image": process.env.PUBLIC_URL +"ecommerce/images/Rolex Submariner.jpeg",
         "name": "Rolex Submariner",
         "description": "Luxury Swiss-made wristwatch with a stainless steel case, waterproof design, and timeless style.",
         "price": "5500000.00",
@@ -118,7 +118,7 @@ const products = [
             "name": "Electronics",
             "slug": "electronics"
         },
-        "image": "ecommerce/images/iPhone 14 Pro Max.webp",
+        "image": process.env.PUBLIC_URL +"ecommerce/images/iPhone 14 Pro Max.webp",
         "name": "iPhone 14 Pro Max",
         "description": "Apple's flagship smartphone featuring a 6.7-inch Super Retina XDR display, A16 Bionic chip, triple-lens camera system with ProRAW, and Dynamic Island functionality. Available in space black and deep purple.",
         "price": "1050000.00",
@@ -132,7 +132,7 @@ const products = [
             "name": "Accessories",
             "slug": "accessories"
         },
-        "image": "ecommerce/images/Logitech MX Master 3 Mouse.webp",
+        "image": process.env.PUBLIC_URL +"ecommerce/images/Logitech MX Master 3 Mouse.webp",
         "name": "Logitech MX Master 3 Mouse",
         "description": "Advanced wireless mouse featuring hyper-fast scrolling, ergonomic design, and compatibility with multiple devices and operating systems.",
         "price": "40000.00",
@@ -146,7 +146,7 @@ const products = [
             "name": "Electronics",
             "slug": "electronics"
         },
-        "image": "ecommerce/images/Sony_Bravia_XR_A95K_QD_OLED_big_ndtv_1641400364279.webp",
+        "image": process.env.PUBLIC_URL +"ecommerce/images/Sony_Bravia_XR_A95K_QD_OLED_big_ndtv_1641400364279.webp",
         "name": "Sony Bravia XR A95K OLED TV (65-inch)",
         "description": "4K OLED TV with Cognitive Processor XR, delivering unparalleled picture and sound quality. Features Google TV and built-in Alexa compatibility.",
         "price": "1500000.00",
@@ -160,7 +160,7 @@ const products = [
             "name": "Electronics",
             "slug": "electronics"
         },
-        "image": "ecommerce/images/Apple iPad Pro 12.9-inch (2023).jpeg",
+        "image": process.env.PUBLIC_URL +"ecommerce/images/Apple iPad Pro 12.9-inch (2023).jpeg",
         "name": "Apple iPad Pro 12.9-inch (2023)",
         "description": "Featuring an M2 chip, Liquid Retina XDR display, Apple Pencil 2 support, and pro-level performance for creatives and professionals.",
         "price": "850000.00",

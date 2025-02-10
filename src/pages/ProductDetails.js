@@ -2,7 +2,7 @@ import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
-import products from "../data/products";
+import productsData from "../data/products";
 import "../styles/ProductDetails.css";
 
 const ProductDetails = () => {
@@ -11,7 +11,7 @@ const ProductDetails = () => {
   const { addToCart } = useContext(CartContext);
 
   // Find product by ID
-  const product = products.find((p) => p.id === parseInt(id));
+  const product = productsData.find((p) => p.id === parseInt(id));
 
   if (!product) {
     return <div className="text-center mt-5">Product not found!</div>;
