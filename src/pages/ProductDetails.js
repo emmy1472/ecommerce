@@ -17,19 +17,26 @@ const ProductDetails = () => {
     return <div className="text-center mt-5">Product not found!</div>;
   }
 
+  console.log("Product Image Path:", product.image); // ✅ Debugging log
+
   return (
     <div className="container my-5">
       <br />
       <br />
       <div className="mb-4">
         <button onClick={() => navigate(-1)} className="btn btn-outline-secondary">
-          <i className="fa fa-arrow-left me-2"></i> back
+          <i className="fa fa-arrow-left me-2"></i> Back
         </button>
       </div>
 
       <div className="row">
         <div className="col-md-6 mb-4 mb-md-0">
-          <img src={`/ecommerce${product.image}`} alt={product.name} className="img-fluid rounded-lg shadow-lg hover-zoom" />
+          <img
+            src={product.image}
+            alt={product.name}
+            className="img-fluid rounded-lg shadow-lg hover-zoom"
+            onError={(e) => { e.target.src = "/images/default.jpg"; }} // Fallback image
+          />
         </div>
 
         <div className="col-md-6">
