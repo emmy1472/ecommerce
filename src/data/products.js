@@ -6,7 +6,7 @@ const products = [
             "name": "Drugs",
             "slug": "drugs"
         },
-        "image": "/images/images_5.jpeg",
+        "image": "/images/images (5).jpeg",
         "name": "Procold",
         "description": "it is for cold and carttarh..... it helps in suppressing cold and make you sleep.",
         "price": "150.00",
@@ -34,7 +34,7 @@ const products = [
             "name": "Fruits",
             "slug": "fruits"
         },
-        "image": "/images/images_4.jpeg",
+        "image": "images/images (4).jpeg",
         "name": "Lemon",
         "description": "Big yellow lemon",
         "price": "500.00",
@@ -62,7 +62,7 @@ const products = [
             "name": "Accessories",
             "slug": "accessories"
         },
-        "image": "/images/headphone_WH.jpeg",
+        "image": "/images/headphone WH.jpeg",
         "name": "Sony WH-1000XM5 Wireless Headphones",
         "description": "Premium noise-canceling headphones with exceptional sound quality and a comfortable design for long listening sessions.",
         "price": "180000.00",
@@ -104,7 +104,7 @@ const products = [
             "name": "Fashion",
             "slug": "fashion"
         },
-        "image": "/images/Rolex_Submariner.jpeg",
+        "image": "/images/Rolex Submariner.jpeg",
         "name": "Rolex Submariner",
         "description": "Luxury Swiss-made wristwatch with a stainless steel case, waterproof design, and timeless style.",
         "price": "5500000.00",
@@ -118,7 +118,7 @@ const products = [
             "name": "Electronics",
             "slug": "electronics"
         },
-        "image": "/images/iPhone_14_Pro_Max.webp",
+        "image": "/images/iPhone 14 Pro Max.webp",
         "name": "iPhone 14 Pro Max",
         "description": "Apple's flagship smartphone featuring a 6.7-inch Super Retina XDR display, A16 Bionic chip, triple-lens camera system with ProRAW, and Dynamic Island functionality. Available in space black and deep purple.",
         "price": "1050000.00",
@@ -132,7 +132,7 @@ const products = [
             "name": "Accessories",
             "slug": "accessories"
         },
-        "image": "/images/Logitech_MX_Master_3_Mouse.webp",
+        "image": "/images/Logitech MX Master 3 Mouse.webp",
         "name": "Logitech MX Master 3 Mouse",
         "description": "Advanced wireless mouse featuring hyper-fast scrolling, ergonomic design, and compatibility with multiple devices and operating systems.",
         "price": "40000.00",
@@ -160,7 +160,7 @@ const products = [
             "name": "Electronics",
             "slug": "electronics"
         },
-        "image": "/images/Apple_iPad_Pro_12.9-inch_2023.jpeg",
+        "image": "/images/Apple iPad Pro 12.9-inch 2023.jpeg",
         "name": "Apple iPad Pro 12.9-inch (2023)",
         "description": "Featuring an M2 chip, Liquid Retina XDR display, Apple Pencil 2 support, and pro-level performance for creatives and professionals.",
         "price": "850000.00",
