@@ -29,7 +29,7 @@ const ProductDetails = () => {
 
       <div className="row">
         <div className="col-md-6 mb-4 mb-md-0">
-          <img src={product.image} alt={product.name} className="img-fluid rounded-lg shadow-lg hover-zoom" />
+          <img src={`/ecommerce${product.image}`} alt={product.name} className="img-fluid rounded-lg shadow-lg hover-zoom" />
         </div>
 
         <div className="col-md-6">

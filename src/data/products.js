@@ -34,7 +34,7 @@ const products = [
             "name": "Fruits",
             "slug": "fruits"
         },
-        "image": "images/images (4).jpeg",
+        "image": "ecommerce/images/images (4).jpeg",
         "name": "Lemon",
         "description": "Big yellow lemon",
         "price": "500.00",
@@ -76,7 +76,7 @@ const products = [
             "name": "Electronics",
             "slug": "electronics"
         },
-        "image": "ecommerce/images/Samsung_Galaxy_S23_Ultra.webp",
+        "image": "ecommerce/images/Samsung Galaxy S23 Ultra.webp",
         "name": "Samsung Galaxy S23 Ultra",
         "description": "A flagship smartphone with a 200MP camera, 5,000mAh battery, 12GB RAM, and a stunning 6.8-inch AMOLED display.",
         "price": "850000.00",
@@ -160,7 +160,7 @@ const products = [
             "name": "Electronics",
             "slug": "electronics"
         },
-        "image": "ecommerce/images/Apple iPad Pro 12.9-inch 2023.jpeg",
+        "image": "ecommerce/images/Apple iPad Pro 12.9-inch (2023).jpeg",
         "name": "Apple iPad Pro 12.9-inch (2023)",
         "description": "Featuring an M2 chip, Liquid Retina XDR display, Apple Pencil 2 support, and pro-level performance for creatives and professionals.",
         "price": "850000.00",
