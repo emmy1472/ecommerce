@@ -25,7 +25,7 @@ const ProductDetails = () => {
 
       <div className="row mt-4">
         <div className="col-md-6">
-          <img src={product.image} alt={product.name} className="img-fluid rounded shadow-lg" />
+          <img src={`/${product.image}`} alt={product.name} className="img-fluid rounded shadow-lg" />
         </div>
 
         <div className="col-md-6">
