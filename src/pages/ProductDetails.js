@@ -18,7 +18,7 @@ const ProductDetails = () => {
   }
 
   return (
-    <div className="container my-5">
+    <div className="container my-5"><br></br><br></br>
       <button onClick={() => navigate(-1)} className="btn btn-outline-secondary">
         <i className="fa fa-arrow-left me-2"></i> Back
       </button>
