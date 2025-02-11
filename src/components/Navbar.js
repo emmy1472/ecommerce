@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faShoppingCart, faUser, faSearch } from "@fortawesome/free-solid-svg-icons";
+import { faHome, faShoppingCart, faUser, faBars } from "@fortawesome/free-solid-svg-icons";
 import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
-import "../styles/Navbar.css"; // Custom styles for sidebar
+import "../styles/Navbar.css"; // Custom styles
 
 const Navbar = () => {
   const { cart } = useContext(CartContext);
@@ -20,74 +20,56 @@ const Navbar = () => {
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow">
-        <div className="container">
+        <div className="container d-flex justify-content-between align-items-center">
+          {/* Brand (E-Shop) */}
           <Link className="navbar-brand fw-bold" to="/">
             E-Shop
           </Link>
-          <button
-            className="navbar-toggler"
-            type="button"
-            onClick={toggleSidebar}
-            aria-expanded={isSidebarOpen}
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse d-none d-lg-flex" id="navbarNav">
-            <form className="d-flex me-auto" style={{ flex: 1 }}>
-              <input
-                className="form-control me-2"
-                type="search"
-                placeholder="Search products..."
-                aria-label="Search"
-              />
-              <button className="btn btn-outline-light" type="submit">
-                <FontAwesomeIcon icon={faSearch} />
-              </button>
-            </form>
-            <ul className="navbar-nav ms-auto">
+
+          {/* Desktop Navigation */}
+          <div className="collapse navbar-collapse d-none d-lg-flex justify-content-end" id="navbarNav">
+            <ul className="navbar-nav">
               <li className="nav-item">
-                <Link
-                  className={`nav-link ${isActive("/") ? "active text-light" : "text-white"}`}
-                  to="/"
-                >
+                <Link className={`nav-link ${isActive("/") ? "active text-light" : "text-white"}`} to="/">
                   <FontAwesomeIcon icon={faHome} /> Home
                 </Link>
               </li>
               <li className="nav-item">
-                <Link
-                  className={`nav-link ${isActive("/products") ? "active text-light" : "text-white"}`}
-                  to="/products"
-                >
+                <Link className={`nav-link ${isActive("/products") ? "active text-light" : "text-white"}`} to="/products">
                   <FontAwesomeIcon icon={faShoppingCart} /> Products
                 </Link>
               </li>
               <li className="nav-item">
-                <Link
-                  className={`nav-link ${isActive("/cart") ? "active text-light" : "text-white"}`}
-                  to="/cart"
-                >
-                  <FontAwesomeIcon icon={faShoppingCart} /> Cart ({cart.length})
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  className={`nav-link ${isActive("/login") ? "active text-light" : "text-white"}`}
-                  to="/login"
-                >
+                <Link className={`nav-link ${isActive("/login") ? "active text-light" : "text-white"}`} to="/login">
                   <FontAwesomeIcon icon={faUser} /> Login
                 </Link>
               </li>
             </ul>
           </div>
+
+          {/* Right Section: Cart & Sidebar Toggle */}
+          <div className="d-flex align-items-center">
+            {/* Cart Icon (Always Visible) */}
+            <Link to="/cart" className="position-relative me-3">
+              <FontAwesomeIcon icon={faShoppingCart} size="lg" className="text-white" />
+              {cart.length > 0 && (
+                <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                  {cart.length}
+                </span>
+              )}
+            </Link>
+
+            {/* Sidebar Toggle Button */}
+            <button className="navbar-toggler border-0" type="button" onClick={toggleSidebar} aria-expanded={isSidebarOpen} aria-label="Toggle navigation">
+              <FontAwesomeIcon icon={faBars} className="text-white" />
+            </button>
+          </div>
         </div>
       </nav>
 
-      {/* Sidebar */}
+      {/* Sidebar for Mobile */}
       <div className={`sidebar ${isSidebarOpen ? "open" : ""}`}>
-        <button className="close-btn" onClick={toggleSidebar}>
-          &times;
-        </button><br></br><br></br>
+        <button className="close-btn" onClick={toggleSidebar}>&times;</button><br></br><br></br>
         <ul className="sidebar-links">
           <li>
             <Link to="/" onClick={toggleSidebar}>
@@ -97,11 +79,6 @@ const Navbar = () => {
           <li>
             <Link to="/products" onClick={toggleSidebar}>
               <FontAwesomeIcon icon={faShoppingCart} /> Products
-            </Link>
-          </li>
-          <li>
-            <Link to="/cart" onClick={toggleSidebar}>
-              <FontAwesomeIcon icon={faShoppingCart} /> Cart ({cart.length})
             </Link>
           </li>
           <li>

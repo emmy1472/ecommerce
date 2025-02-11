@@ -5,10 +5,16 @@ import { Link } from "react-router-dom";
 
 const Products = () => {
   const [products, setProducts] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
     setProducts(productsData); // Load products from local file
   }, []);
+
+  // Filter products based on search term
+  const filteredProducts = products.filter((product) =>
+    product.name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   return (
     <div className="container my-5">
@@ -16,9 +22,23 @@ const Products = () => {
       <br />
       <h1 className="text-center mb-4">Explore Our Products</h1>
 
+      {/* Search Bar */}
+      <div className="mb-4 d-flex justify-content-center">
+        <input
+          type="text"
+          className="form-control w-50"
+          placeholder="Search products..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
+        <button className="btn btn-primary ms-2" onClick={() => setSearchTerm("")}>
+          Clear
+        </button>
+      </div>
+
       <div className="row">
-        {products.length > 0 ? (
-          products.map((product) => (
+        {filteredProducts.length > 0 ? (
+          filteredProducts.map((product) => (
             <div className="col-sm-6 col-md-4 col-lg-3 mb-4" key={product.id}>
               <div className="card product-card h-100 shadow-sm">
                 <img
@@ -43,7 +63,7 @@ const Products = () => {
             </div>
           ))
         ) : (
-          <p className="text-center">No products available.</p>
+          <p className="text-center">No products found.</p>
         )}
       </div>
     </div>
