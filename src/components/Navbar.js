@@ -22,7 +22,7 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow">
         <div className="container d-flex justify-content-between align-items-center">
           {/* Brand (E-Shop) */}
-          <Link className="navbar-brand fw-bold" to="/">
+          <Link className="navbar-brand fw-bold" to="/ecommerce">
             E-Shop
           </Link>
 
@@ -30,7 +30,7 @@ const Navbar = () => {
           <div className="collapse navbar-collapse d-none d-lg-flex justify-content-end" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link className={`nav-link ${isActive("/") ? "active text-light" : "text-white"}`} to="/">
+                <Link className={`nav-link ${isActive("/ecommerce") ? "active text-light" : "text-white"}`} to="/">
                   <FontAwesomeIcon icon={faHome} /> Home
                 </Link>
               </li>
@@ -72,7 +72,7 @@ const Navbar = () => {
         <button className="close-btn" onClick={toggleSidebar}>&times;</button><br></br><br></br>
         <ul className="sidebar-links">
           <li>
-            <Link to="/" onClick={toggleSidebar}>
+            <Link to="/ecommerce" onClick={toggleSidebar}>
               <FontAwesomeIcon icon={faHome} /> Home
             </Link>
           </li>
