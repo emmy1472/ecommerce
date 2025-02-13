@@ -30,7 +30,7 @@ const Navbar = () => {
           <div className="collapse navbar-collapse d-none d-lg-flex justify-content-end" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link className={`nav-link ${isActive("/ecommerce") ? "active text-light" : "text-white"}`} to="/">
+                <Link className={`nav-link ${isActive("/ecommerce") ? "active text-light" : "text-white"}`} to="/ecommerce">
                   <FontAwesomeIcon icon={faHome} /> Home
                 </Link>
               </li>
